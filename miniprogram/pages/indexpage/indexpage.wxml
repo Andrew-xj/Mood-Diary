@@ -1,0 +1,22 @@
+<!--  indexpage.wxml  -->
+<view class='background'>
+  <block wx:for="{{categoryList}}" wx:key='id'>
+    <navigator url='../category/category?id={{item._id}}' bindlongpress='remove' id='{{item._id}}'>
+      <view class='startstyle'>
+        <image src="{{item.image}}" class="photosize"></image>
+        <view class='text-details'>
+          <text style="font-size:50rpx">{{item.Type}}</text>
+          <text style="font-size:25rpx">{{item.dec}}</text>
+        </view>
+      </view>
+    </navigator>
+  </block>
+  <view class='floatBtn'>
+    <button class="goodbutton1" size="small" bindtap="navigateTo" plain>Add New Voice</button>
+    <button class="goodbutton2" size="small" bindtap="addcategory" plain>Add Category</button>
+    <modal hidden="{{hidden}}" title="Add New Category" confirm-text="确认" bindcancel="cancel" bindconfirm="confirm" no-cancel="true">
+      <input type='text' placeholder="New Category Name" bindblur="name" />
+      <input type="text" placeholder='Describption For Your New Category' bindblur='dec' />
+    </modal>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-row": "vant-weapp/row",
+    "van-icon": "vant-weapp/icon"
+  },
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "History Voices",
+  "navigationBarBackgroundColor": "#e7f1fb"
+}

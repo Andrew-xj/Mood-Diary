@@ -1,0 +1,12 @@
+<!--  startpage.wxml  -->
+<view class='background'>
+  <view class='element'>
+    <view class='image'>
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class='word'>
+      <open-data type="userNickName" style='font-size:40rpx'></open-data>
+      <text style='font-size:60rpx'>Did you have a good day today?</text>
+    </view>
+  </view>
+</view>

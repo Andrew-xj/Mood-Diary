@@ -1,0 +1,62 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"nodeModules": true,
+		"uglifyFileName": true
+	},
+	"appid": "wxa24da9c47490e77a",
+	"projectname": "%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%A8%A1%E6%8B%9F%E4%BA%91%E5%BC%80%E5%8F%91",
+	"libVersion": "2.4.0",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": 4,
+					"name": "indexpage",
+					"pathName": "pages/indexpage/indexpage",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "addpage",
+					"pathName": "pages/addpage/addpage",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "category",
+					"pathName": "pages/category/category",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "startpage",
+					"pathName": "pages/startpage/startpage",
+					"query": ""
+				}
+			]
+		}
+	}
+}

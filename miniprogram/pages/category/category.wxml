@@ -1,0 +1,17 @@
+<!--  category.wxml  -->
+<view class='background'>
+  <view class='avatarBox'>
+    <image class="avatar" src="{{categoryList[0].image}}"></image>
+    <view style='font-size:50rpx'>{{categoryList[0].Type}}</view>
+  </view>
+  <van-row class="imageBox">
+    <block wx:for='{{voiceList}}' wx:key='{{item._id}}'>
+      <view class='cell' bindlongpress='remove' id="{{item._id}}" bindtap='play'>
+        <van-icon class='icon' name="play" size='50rpx' custom-style='icon' id='{{item._id}}' />
+        <view class='fileName' id="{{item._id}}">
+          <text id='{{item._id}}'>{{item.fileName}}</text>
+        </view>
+      </view>
+    </block>
+  </van-row>
+</view>

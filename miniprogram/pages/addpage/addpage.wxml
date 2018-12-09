@@ -1,0 +1,19 @@
+<!--  addpage.wxml  -->
+<view class='background'>
+  <view class='info'>
+    <view class="picker">
+      <picker value='{{category}}' bindchange='category' range="{{range}}">
+        <text>Choose Category</text>
+      </picker>
+    </view>
+    <view class='category'>
+      <text>{{category}}</text>
+    </view>
+    <view class='name'>
+      <input type='text' placeholder='The name for your voice' bindblur="name" />
+    </view>
+  </view>
+  <view class='btn'>
+    <image src='./icon1.jpg' class='image' bindtouchstart='startRecode' bindtouchend='endRecode'></image>
+  </view>
+</view>
